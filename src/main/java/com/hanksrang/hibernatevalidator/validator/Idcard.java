@@ -25,7 +25,7 @@ import java.lang.annotation.Target;
 )
 public @interface Idcard {
 
-    String value()default "43112219871126";
+    String value()default "510223232233232";
 
     String regexp() default "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\\.[a-zA-Z]{2,4}";
 

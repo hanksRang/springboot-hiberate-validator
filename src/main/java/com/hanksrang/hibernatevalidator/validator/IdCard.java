@@ -23,7 +23,7 @@ import java.lang.annotation.Target;
 @Constraint(
         validatedBy = {}
 )
-public @interface Idcard {
+public @interface IdCard {
 
     String value()default "510223232233232";
 

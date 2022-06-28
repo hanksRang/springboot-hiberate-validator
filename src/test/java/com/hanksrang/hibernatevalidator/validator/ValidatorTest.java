@@ -1,6 +1,6 @@
 package com.hanksrang.hibernatevalidator.validator;
 
-import com.hanksrang.hibernatevalidator.controller.dto.Customer;
+import com.hanksrang.hibernatevalidator.dto.Customer;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;

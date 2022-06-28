@@ -1,6 +1,6 @@
-package com.hanksrang.hibernatevalidator.controller.dto;
+package com.hanksrang.hibernatevalidator.dto;
 
-import com.hanksrang.hibernatevalidator.validator.Idcard;
+import com.hanksrang.hibernatevalidator.validator.IdCard;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +12,7 @@ public class Customer {
 
      private int age;
 
-     @Idcard
+     @IdCard
      private String idcard;
 
      @Length(min = 0, max = 1)

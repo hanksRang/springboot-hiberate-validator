@@ -2,7 +2,7 @@ package com.hanksrang.hibernatevalidator.controller.test;
 
 
 import com.alibaba.fastjson.JSON;
-import com.hanksrang.hibernatevalidator.controller.dto.QueryParams;
+import com.hanksrang.hibernatevalidator.dto.QueryParam;
 import lombok.extern.java.Log;
 import org.junit.Before;
 import org.junit.Test;
@@ -38,12 +38,12 @@ public class ValidateControllerTest {
 
     @Test
     public void testWhenAgeInvalid() throws Exception {
-        QueryParams queryParams = new QueryParams();
-        queryParams.setAge(300);
-        queryParams.setGender("1231");
-        queryParams.setName("小王1231313");
-        queryParams.setCreditCardNumber("622586396663888");
-        String reqJson = JSON.toJSONString(queryParams);
+        QueryParam queryParam = new QueryParam();
+        queryParam.setAge(300);
+        queryParam.setGender("1231");
+        queryParam.setName("小王1231313");
+        queryParam.setCreditCardNumber("622586396663888");
+        String reqJson = JSON.toJSONString(queryParam);
         MvcResult result = mockMvc.perform(post("/validate/query")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(reqJson)

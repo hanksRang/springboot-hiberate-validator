@@ -1,9 +1,8 @@
-package com.hanksrang.hibernatevalidator.controller.dto;
+package com.hanksrang.hibernatevalidator.dto;
 
-import lombok.Data;
 import org.hibernate.validator.constraints.*;
 
-public class QueryParams{
+public class QueryParam {
 
 
     private String id;
